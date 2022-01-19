@@ -1,0 +1,159 @@
+ <div class="payment">
+    <div class="container">
+    <br>
+    <div class="row">
+        <div class="offset-4 col-5 ">
+            <form class="form-horizontal shadow p-3 mb-5 bg-white rounded">
+     
+                 <!--<div class="form-group">
+                    <label style="color: green" medium="control-label col-m-10" for="address"><h2>Total Payment:</h2></label>
+                    <div class="col-m-10">
+                        <input id="collection_amount" type="text" class="form-control" name="payment"/>
+                    </div>
+                </div>-->
+      
+                <div><br>
+                    <h2 style="color: green;">          
+                    <input type=radio name=formOfPayment id=formOfPayment value=CreditCard />
+                        Pay by Credit Card</h2>             
+                </div>             
+      
+                <div class="col-75">
+            
+                    <dt>Card Number</dt>
+                    <dd>
+                        <input type="text" id="cc_no" name="cc_no" placeholder="XXXXXXXXXXXXXXXX"/>
+                        <span id="err_cc_no" class="jserror"> </span>
+                    </dd> 
+                
+                    <dt>Expiry Date</dt>
+                    <dd>
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td><select id="cc_exp_mm" name="cc_exp_mm">
+                                    <option value="" selected="selected">Month</option>
+                                    <option value="1" >January</option>                                 
+                                    <option value="2">February</option>                              
+                                    <option value="3">March</option>                           
+                                    <option value="4">April</option>                           
+                                    <option value="5">May</option>                            
+                                    <option value="6">June</option>                            
+                                    <option value="7">July</option>                           
+                                    <option value="8">August</option>                             
+                                    <option value="9">September</option>                     
+                                    <option value="10">October</option>                              
+                                    <option value="11">November</option>                             
+                                    <option value="12">December</option>
+                                </select></td>  
+
+                                <td width="20">&nbsp;</td>                         
+                                <td><select id="cc_exp_yyyy" name="cc_exp_yyyy">
+                                    <option value="" selected="selected">Year</option>
+                                    <option value="2022">2022</option>                              
+                                    <option value="2023">2023</option>                           
+                                    <option value="2024">2024</option>                           
+                                    <option value="2025">2025</option>                            
+                                    <option value="2026">2026</option>                            
+                                    <option value="2027">2027</option>                           
+                                    <option value="2028">2028</option>                             
+                                    <option value="2029">2029</option>                     
+                                    <option value="2030">2030</option>                              
+                                    <option value="2031">2031</option>                             
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>                             
+                                    <option value="2034">2034</option>
+                                    <option value="2035">2035</option>
+                                </select></td>                     
+                            </tr>                 
+                        </table>             
+                    </dd>
+            
+                    <dt>CVV</dt>
+                    <dd>
+                        <input id="cvv" type="text" size="5" name="cvv" placeholder="xxx"/>
+                    </dd>
+                    
+                    <div>
+                        <div><br>
+                            <h2 style="color: green;">          
+                                <input type=radio name=formOfPayment id=formOfPayment value=CreditCard />
+                                Pay by Debit Card
+                            </h2>             
+                        </div>  
+          
+                        <div class="col-75">
+                            <dt>Card Number</dt>
+                            <dd>
+                                <input type="text" id="cc_no" name="cc_no" placeholder="XXXXXXXXXXXXXXXX"/>
+                                <span id="err_cc_no" class="jserror"> </span>
+                            </dd> 
+                
+                            <dt>Expiry Date</dt>
+                            <dd>
+                                <table cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td><select id="cc_exp_mm" name="cc_exp_mm">
+                                            <option value="" selected="selected">Month</option>
+                                            <option value="1" >January</option>                                 
+                                            <option value="2">February</option>                              
+                                            <option value="3">March</option>                           
+                                            <option value="4">April</option>                           
+                                            <option value="5">May</option>                            
+                                            <option value="6">June</option>                            
+                                            <option value="7">July</option>                           
+                                            <option value="8">August</option>                             
+                                            <option value="9">September</option>                     
+                                            <option value="10">October</option>                              
+                                            <option value="11">November</option>                             
+                                            <option value="12">December</option>                             
+                                        </select></td>                         
+                                        <td width="20">&nbsp;</td>                         
+                                        <td><select id="cc_exp_yyyy" name="cc_exp_yyyy">
+                                            <option value="" selected="selected">Year</option>                               
+                                            <option value="2022">2022</option>                              
+                                            <option value="2023">2023</option>                           
+                                            <option value="2024">2024</option>                           
+                                            <option value="2025">2025</option>                            
+                                            <option value="2026">2026</option>                            
+                                            <option value="2027">2027</option>                           
+                                            <option value="2028">2028</option>                             
+                                            <option value="2029">2029</option>                     
+                                            <option value="2030">2030</option>                              
+                                            <option value="2031">2031</option>                             
+                                            <option value="2032">2032</option>
+                                            <option value="2033">2033</option>                             
+                                            <option value="2034">2034</option>
+                                            <option value="2035">2035</option>
+                                        </select></td>                     
+                                    </tr>                 
+                                </table>             
+                            </dd>
+
+                            <dt>CVV</dt>
+                            <dd>
+                                <input id="cvv" type="text" size="5" name="cvv" placeholder="xxx"/>
+                            </dd>
+                            <div>
+                                <div style="text-align: center">
+                                    <mat-card-actions style="text-align: center">
+                                        <a [routerLink]="['/updateaddress']">
+                                            <button mat-raised-button color="primary">UPDATE ADDRESS</button>
+                                        </a>
+                                    </mat-card-actions>
+                                    <br><br>
+                                    <mat-card-actions style="text-align: center">
+                                        <a [routerLink]="['/checkout']">
+                                            <button mat-raised-button color="primary">SUBMIT</button>
+                                        </a>
+                                    </mat-card-actions>
+                                </div>
+                            </div>
+  
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>

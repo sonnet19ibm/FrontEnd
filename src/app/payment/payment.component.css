@@ -1,0 +1,8 @@
+.payment{
+
+    background-image: url('/assets/img/Pay.PNG');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}

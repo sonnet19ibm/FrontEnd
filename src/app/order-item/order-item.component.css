@@ -1,0 +1,8 @@
+.order-item{
+    background-image: url('/assets/img/cart1.PNG');
+    background-size:100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}

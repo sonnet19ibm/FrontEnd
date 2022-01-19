@@ -1,0 +1,31 @@
+<table class="table table-stripped">
+    <thead>
+    <tr>
+        <th>sonnetRegisteredId</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>ZipCode</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let addr of address">
+        <td>{{addr.sonnetRegisteredId}}</td>
+        <td>{{addr.street}}</td>
+        <td>{{addr.city}}</td>
+        <td>{{addr.state}}</td>
+        <td>{{addr.country}}</td>
+        <td>{{addr.pinCode}}</td>
+    
+        <td>
+            <a [routerLink]="['/address']">
+            <button (click)="deleteAddress(addr.aid)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+           </a>
+        </td>
+
+    </tr>
+    </tbody>
+</table>

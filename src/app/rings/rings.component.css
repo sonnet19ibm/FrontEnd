@@ -1,0 +1,12 @@
+.card-heading{
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    font-family: initial;
+}
+.rings{
+    background-image: url('/assets/img/product category1.PNG');
+    background-repeat: no-repeat;
+    background-size:cover;
+}

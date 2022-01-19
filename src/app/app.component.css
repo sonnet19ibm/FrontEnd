@@ -1,0 +1,13 @@
+
+.jumbotron{
+  
+  margin-bottom:0;
+  background-color: #ffffff;
+  text-transform: capitalize;
+}
+footer {
+  background-color: rgb(48, 48, 51);
+  padding: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: floralwhite;
+}

@@ -1,0 +1,40 @@
+.home-page{
+    top: 0;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    display: block;
+    background-image: url('/assets/img/Home.PNG');
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.h1{
+    text-align:center ;
+    font-size:300%;
+    color:white;
+}
+.jumbotron{
+    background-image: url('/assets/Products/NeckwearHomepage.png');
+    background-size:100%;
+    background-position-y: 100%;
+}
+
+.carousel {
+    position: relative;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+  }
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+
+  

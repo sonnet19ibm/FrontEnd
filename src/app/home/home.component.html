@@ -1,0 +1,72 @@
+<style>
+  h1{
+      color:black;
+    font-family: verdana;
+    font-size: 500%;
+    }
+    </style>
+    
+    
+    <div class="jumbotron">
+        <div class="container text-center">
+          <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">Sonnet</h1>   <br>   
+          <p style="font-size:150%">Fashion is all about Accessories</p>
+        </div>
+      </div>
+      
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <ul class="navbar-nav">
+         <li class="nav-item"><a  class="nav-link" [routerLink]="['/product-category']"><h4>PRODUCT CATEGORY</h4></a></li> 
+         <li class="nav-item"><a  class="nav-link" [routerLink]="['/order-item']"><mat-icon matSuffix>add_shopping_cart</mat-icon></a></li>
+         
+      </ul>
+  </nav>
+
+  <!--<div class="home-page">
+    <p></p>
+  </div>-->
+
+
+  
+  <div class="container-fluid  mx-0 my-0">
+    <div class="carousel-container position-relative row">
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/img/Home.PNG">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/Home3.PNG">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/Home2.PNG">
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <script>
+      // when user swipes, go next or previous
+      $('#myCarousel').swipe({
+        fallbackToMouseEvents: true,
+        swipeLeft: function(e) {
+          $('#myCarousel').carousel('next');
+        },
+        swipeRight: function(e) {
+          $('#myCarousel').carousel('prev');
+        },
+        allowPageScroll: 'vertical',
+        preventDefaultEvents: false,
+        threshold: 75
+      });
+      </script>
+
+  
+    
+
+
+
+
+  

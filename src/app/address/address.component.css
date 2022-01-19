@@ -1,0 +1,7 @@
+.address{
+    background-image: url('/assets/img/Address.PNG');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}

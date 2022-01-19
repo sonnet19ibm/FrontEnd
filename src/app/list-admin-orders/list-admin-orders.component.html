@@ -1,0 +1,29 @@
+<table class="table table-stripped">
+    <thead>
+    <tr>
+        <th>ORDER TRACKING NUMBER</th>
+        <th>TOTAL QUANTITY</th>
+        <th>TOTAL PRICE</th>
+        <th>STATUS</th>
+        <th>CUSTOMER EMAILID</th>
+        <th>ACTIONS</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of orders">
+        <td>{{order.orderTrackingNumber}}</td>
+        <td>{{order.totalQuantity}}</td>
+        <td>{{order.totalPrice}}</td>
+        <td>{{order.status}}</td>
+        <td>{{order.emailId}}</td>
+    
+        <td>
+            <a [routerLink]="['/admin-orders']">
+            <button (click)="deleteOrderItemList(order.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+        </a>
+        </td>
+
+    </tr>
+    </tbody>
+</table>

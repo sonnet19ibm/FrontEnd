@@ -1,0 +1,44 @@
+<br>
+<style>
+    .imgbg {
+        height: 100%;
+    width: 100%;
+    text-align: left;
+    background-image: url("/assets/img/order-item.png");
+    background-repeat: no-repeat;
+    border-collapse: collapse;
+    background-size:cover;
+    }
+    .imgbg td, .imgbg th {
+    border:2px solid black;
+    padding:5px;
+    }
+    </style>
+<table class="imgbg">
+    <thead>
+    <tr>
+        <th>UnitPrice</th>
+        <th>Quantity</th>
+        <th>Product ID</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let orderitem of orderitems">
+        <td>{{orderitem.unitPrice}}</td>
+        <td>{{orderitem.quantity}}</td>
+        <td>{{orderitem.productId}}</td>
+    
+        <td>
+            <a [routerLink]="['/order-item']">
+            <button (click)="deleteOrderItemList(orderitem.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+        </a>
+        </td>
+
+    </tr>
+    </tbody>
+    <br><br><br><br>
+    <br><br><br><br>
+</table>
+<br>
