@@ -1,0 +1,12 @@
+.card-heading{
+    text-align: center;
+    font-weight: bold;
+}
+.card-footer{
+    font-family: initial;
+}
+.product-category{
+    background-image: url('/assets/img/product category.PNG');
+    background-repeat: no-repeat;
+    background-size:cover;
+}

@@ -1,0 +1,78 @@
+<div class="address">
+    <br><br>
+<div class="container ">
+
+    <br>
+    <div class="row">
+        <div class="offset-3 col-5 ">
+            <form class="form-horizontal shadow p-3 mb-5 bg-white rounded" #f="ngForm" (ngSubmit)=" addressSubmit()" novalidate>
+                
+                    <div class="form-group">
+                        <label style="font-weight: bolder;font-size: medium;"class="control-label col-m-10" for="orderitem">SONNET-REGISTERED-ID(kindly check your regitration confirmation or contact customer service): </label>
+                        <div class="col-m-10">
+                            <input  class="form-control" name="address" [(ngModel)]="addressData.sonnetRegisteredId" placeholder="SONNET-REGISTERED-ID"/>
+                        </div>
+                    </div>
+                    <label class="control-label col-m-10" for="city">Street: </label>
+                    <div class="col-m-10">
+                        <input type="text" class="form-control" name="address" [(ngModel)]="addressData.street" placeholder="Street"/>
+                    </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-m-10" for="city">City: </label>
+                    <div class="col-m-10">
+                        <input type="text" class="form-control" name="city" [(ngModel)]="addressData.city" placeholder="City"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-m-10" for="state">State: </label>
+                    <div class="col-m-10">
+                        <input type="text" class="form-control" name="state" [(ngModel)]="addressData.state" placeholder="State"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label class="control-label col-m-10" for="country">Country: </label>
+                        <div class="col-m-10">
+                            <input type="text" class="form-control" name="country" [(ngModel)]="addressData.country" placeholder="Country"/>
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <label class="control-label col-m-10" for="zipcode">PinCode: </label>
+                    <div class="col-m-10">
+                        <input type="text" type="number" class="form-control" name="pinCode" [(ngModel)]="addressData.pinCode" placeholder="Zipcode"/>
+                    </div>
+                </div>
+                
+                <br />
+                
+                <div class="form-group">
+                    <div class="col-m-offset-2 col-m-4">
+                        <div style="text-align: center">
+                        <mat-card-actions style="text-align: center">
+
+                            <button mat-raised-button color="primary"><mat-icon>payment</mat-icon>PROCEED TO PAY</button>
+                          </mat-card-actions>
+                          <br><br>
+                          
+                          <mat-card-actions style="text-align: center">
+                            
+                            <a [routerLink]="['/updateaddress']">
+                            <button mat-raised-button color="primary"><mat-icon>room</mat-icon>UPDATE ADDRESS</button>
+                            </a>
+                          </mat-card-actions>
+                          <br><br>
+                          <mat-card-actions style="text-align: center">
+                            
+                            <a [routerLink]="['/deleteaddress']">
+                            <button mat-raised-button color="primary"><mat-icon> location_off</mat-icon>DELETE ADDRESS</button>
+                            </a>
+                          </mat-card-actions>
+                          </div>
+                       
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

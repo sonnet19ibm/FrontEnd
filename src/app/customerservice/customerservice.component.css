@@ -1,0 +1,19 @@
+.jumbotron{
+    background-image: url("/assets/img/Customer2.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+mat-card{
+    height:63.5%;
+    width:30%;
+    margin: 10% auto;
+    border-radius: 8px;
+}
+mat-form-field,mat-checkbox{
+    width:80%;
+    display:block;
+    margin: auto;
+}
+mat-card-content{
+    margin-top: 20px;
+}

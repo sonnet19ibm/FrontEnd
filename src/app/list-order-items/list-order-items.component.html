@@ -1,0 +1,29 @@
+
+<table class="table table-stripped">
+    <thead>
+    <tr>
+        <th>UnitPrice</th>
+        <th>Quantity</th>
+        <th>Product ID</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let orderitem of orderitems">
+        <td>{{orderitem.unitPrice}}</td>
+        <td>{{orderitem.quantity}}</td>
+        <td>{{orderitem.productId}}</td>
+    
+        <td>
+            <a [routerLink]="['/order-item']">
+            <button (click)="deleteOrderItemList(orderitem.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+        </a>
+        </td>
+
+    </tr>
+    </tbody>
+    <br><br><br><br>
+    <br><br><br><br>
+</table>
+<br>

@@ -1,0 +1,25 @@
+<table class="table table-stripped">
+    <thead>
+    <tr>
+        <th>ORDER TRACKING NUMBER</th>
+        <th>TOTAL QUANTITY</th>
+        <th>TOTAL PRICE</th>
+        <th>STATUS</th>
+        <th>CUSTOMER EMAILID</th>
+        
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of orders">
+        <td>{{order.orderTrackingNumber}}</td>
+        <td>{{order.totalQuantity}}</td>
+        <td>{{order.totalPrice}}</td>
+        <td>{{order.status}}</td>
+        <td>{{order.emailId}}</td>
+    
+       
+
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+
+.h1{
+    text-align:center ;
+    font-size:300%;
+    color:white;
+}
+.jumbotron{
+    background-image: url('/assets/Products/NeckwearHomepage.png');
+    background-size:100%;
+    background-position-y: 100%;
+}
+
+.carousel {
+    position: relative;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+  }
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+
+  

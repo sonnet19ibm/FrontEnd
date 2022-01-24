@@ -1,0 +1,64 @@
+<div class="order-item">
+    <div class="container ">
+        <br>
+        <div class="row">
+            <div class="offset-3 col-5 ">
+                <form class="form-horizontal shadow p-3 mb-5 bg-white rounded" #f="ngForm" (ngSubmit)=" formSubmit()" novalidate>
+                    <div class="form-group">
+                        <label class="control-label col-m-10" for="orderTrackingNumber">ORDER TRACKING NUMBER: </label>
+                        <div class="col-m-10">
+                            <input  class="form-control" type="text" name="orderTrackingNumber" [(ngModel)]="orderData.orderTrackingNumber" placeholder="ORDER TRACKING NUMBER"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-m-10" for="totalQuantity">TOTAL QUANTITY: </label>
+                        <div class="col-m-10">
+                            <input class="form-control" name="totalQuantity" [(ngModel)]="orderData.totalQuantity" placeholder="TOTAL QUANTITY"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-m-10" for="totalPrice">TOTAL PRICE: </label>
+                        <div class="col-m-10">
+                            <input  class="form-control" name="totalPrice" [(ngModel)]="orderData.totalPrice" placeholder="TOTAL PRICE"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-m-10" for="status">STATUS : </label>
+                        <div class="col-m-10">
+                            <input  class="form-control" type="text" name="status" [(ngModel)]="orderData.status" placeholder="STATUS"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-m-10" for="emailId">CUSTOMER EMAIL ID : </label>
+                        <div class="col-m-10">
+                            <input  class="form-control" type="text" name="emailId" [(ngModel)]="orderData.emailId" placeholder="CUSTOMER EMAIL ID"/>
+                        </div>
+                    </div>
+                    
+                    <br />
+                    
+                    <div class="form-group">
+                        <div class="col-m-offset-2 col-m-4">
+    
+                              <mat-card-actions style="text-align: center">
+                                <button mat-raised-button color="primary">SEND MAIL TO CUSTOMER</button>
+                              </mat-card-actions>
+                              <br><br>
+                             
+                        </div>
+                        <div class="col-m-offset-2 col-m-4"> 
+                             <mat-card-actions style="text-align: center">
+                                <a [routerLink]="['/list-admin-orders']">
+                                 <button mat-raised-button color="primary">SEE ALL ORDERS</button>
+                                 </a>
+                            </mat-card-actions>
+                             <br><br>
+    
+                            <br><br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
